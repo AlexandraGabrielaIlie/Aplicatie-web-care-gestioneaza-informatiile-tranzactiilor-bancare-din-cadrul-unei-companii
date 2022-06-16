@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="user.css">
+    <title> Alexandra-Gabriela Ilie  </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="downloadFile.js"></script>
+    <script type="text/javascript" src="sortTable.js"></script>
+    <script type="text/javascript" src="search.js"></script>
+</head>
+ 
+<style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHw%3D&amp;w=1000&amp;q=80" width="870" height="580');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    </style>
+
+<button onclick="logout()"; class="clickout"><a href="home.html">Log Out </a></button>
+
+<script>
+
+  var k=document.getElementById("logout");
+
+</script>
+
+<body>
+    <h1> Welcome to IAG transaction! </h1>
+
+</body>
+
+
+
+
+<form method="GET" action="" class="sortare">
+	
+	Table Sort by: 
+	<select name="">   
+		<option>Name</option> 
+    <option>E-mail</option> 
+		<option>Current balance()</option> 
+		<option>Transfer</option> 
+	</select>\
+
+</form>
+  
+
+<button onclick="sortTable()">Sort</button></p>
+
+
+
+
+<input type="hidden" name="MAX_FILE_SIZE" value="10000" /> <input name="file" type="file" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form method="post"; action="mailto:alexandragabriela133@yahoo.com" >
+  <input type="submit" class="sendmail" value="Send an e-mail " />
+</form>
+
+<!-- The form -->
+<form class="example" action="user.html">
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..">
+</form>
+
+<button> Add a new Transaction</button>
+<button> Delete Transaction</button>
+
+<body>
+  <table id="tblStocks" cellpadding="0" cellspacing="0">
+      <tr>
+          <th>Name</th>
+          <th>E-mail</th>
+          <th>Phone</th>
+          <th>Current-Balance</th>
+          <th>Transfer</th>
+        </tr>
+        <tr>
+          <td>LifeHealthCareINC</td>
+          <td>LifeHealthCareINC@gmail.com</td>
+          <td>+40755869215</td>
+          <td>8000euro</td>
+          <td>+8.06euro</td>
+        </tr>
+        <tr>
+          <td>DenNetworksLtd</td>
+          <td>DenNetworksLtd@yahoo.com</td>
+          <td>+40755963321</td>
+          <td>2563.33euro</td>
+          <td>+6.96euro</td>
+        </tr>
+        <tr>
+          <td>RMGCements</td>
+          <td>RMGCements@gmail.com</td>
+          <td>+40733615284</td>
+          <td>1759.12euro</td>
+          <td>-3.57euro</td>
+        </tr>
+        <tr>
+          <td>iagbank</td>
+          <td>iagbank@gmail.com</td>
+          <td>+40733315284</td>
+          <td>17349.12euro</td>
+          <td>-67.57euro</td>
+        </tr>
+        <tr>
+          <td>IVS</td>
+          <td>ivsbank@gmail.com</td>
+          <td>+40733615284</td>
+          <td>1755.12euro</td>
+          <td>+963.57euro</td>
+        </tr>
+        <tr>
+          <td>IVS</td>
+          <td>ivsbank@gmail.com</td>
+          <td>+40733615284</td>
+          <td>1755.12euro</td>
+          <td>+963.57euro</td>
+        </tr>
+        <tr>
+          <td>librabank</td>
+          <td>librabank@gmail.com</td>
+          <td>+40763615284</td>
+          <td>21225.12euro</td>
+          <td>+363.57euro</td>
+        </tr>
+        <tr>
+          <td>INGBANK</td>
+          <td>INGBANK@gmail.com</td>
+          <td>+40732585284</td>
+          <td>1852.12euro</td>
+          <td>-900.57euro</td>
+        </tr>
+  </table>
+  <br />
+  <button onclick="exportData()" class="btn"><i class="fa fa-download"></i>
+    <span class="glyphicon glyphicon-download" ></span>
+    Download list</button>
+</body>
+</html>
